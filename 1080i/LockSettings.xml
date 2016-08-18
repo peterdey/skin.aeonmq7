@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol>5</defaultcontrol>
+	<coordinates>
+	<system>1</system>
+	<left>0</left>
+	<top>0</top>
+	</coordinates>
+	<include>Animation_DialogPopup</include>
+	<controls>
+	<control type="group">
+	<left>326</left>
+	<top>285</top>
+	<width>1270</width>
+	<height>492</height>
+	<visible>Window.IsActive(131)</visible>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1270</width>
+	<height>1</height>
+	<texture>grey.png</texture>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>490</top>
+	<width>1270</width>
+	<height>1</height>
+	<texture>grey.png</texture>
+	</control>
+	<control type="image">
+	<left>-45</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1270</width>
+	<height>492</height>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>F0FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>58</top>
+	<width>1023</width>
+	<height>1</height>
+	<texture>black.png</texture>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1023</width>
+	<height>60</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="label" id="2">
+	<!-- header -->
+	<left>15</left>
+	<top>9</top>
+	<width>1010</width>
+	<height>42</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<font>Font_button</font>
+	<label>$LOCALIZE[20043]</label>
+	</control>
+	<control type="grouplist" id="5">
+	<description>control area</description>
+	<left>0</left>
+	<top>68</top>
+	<width>1024</width>
+	<height>369</height>
+	<itemgap>0</itemgap>
+	<onup>5</onup>
+	<ondown>5</ondown>
+	<onleft>28</onleft>
+	<onright>28</onright>
+	</control>
+	<control type="button" id="7">
+	<description>Default Button</description>
+	<width>705</width>
+	<textoffsetx>30</textoffsetx>
+	</control>
+	<control type="radiobutton" id="8">
+	<width>705</width>
+	<radioposx>892</radioposx>
+	<textoffsetx>30</textoffsetx>
+	</control>
+	<control type="spincontrolex" id="9">
+	<description>directory content select spincontrol</description>
+	<width>705</width>
+	<height>60</height>
+	<font>Font_plot</font>
+	</control>
+	<control type="sliderex" id="10">
+	<description>Default Slider</description>
+	<left>2295</left>
+	<top>225</top>
+	<height>46</height>
+	<width>450</width>
+	<sliderwidth>100</sliderwidth>
+	<sliderheight>20</sliderheight>
+	<textoffsetx>18</textoffsetx>
+	</control>
+	<control type="label" id="14"></control>
+	<control type="image">
+	<!-- Options -->
+	<left>980</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1269</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1024</left>
+	<top>0</top>
+	<width>244</width>
+	<height>492</height>
+	<texture>grey.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="grouplist" id="9001">
+	<left>1024</left>
+	<top>63</top>
+	<control type="button" id="28">
+	<!-- OK -->
+	<include>SettingsDialogButton</include>
+	<label>186</label>
+	<onleft>SetFocus(5)</onleft>
+	<onright>SetFocus(5)</onright>
+	</control>
+	<control type="button" id="29">
+	<!-- Cancel -->
+	<include>SettingsDialogButton</include>
+	<label>222</label>
+	<onleft>SetFocus(5)</onleft>
+	<onright>SetFocus(5)</onright>
+	</control>
+	</control>
+	</control>
+	</controls>
+</window>

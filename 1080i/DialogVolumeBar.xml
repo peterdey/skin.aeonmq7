@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<controls>
+	<control type="group">
+	<include>Animation_TopDialogPopup</include>
+	<include>Dialogs_Bar</include>
+	<control type="progress" id="20">
+	<left>450</left>
+	<top>6</top>
+	<width>1020</width>
+	<height>30</height>
+	<info>Player.Volume</info>
+	<visible>!player.passthrough</visible>
+	</control>
+	<control type="label">
+	<include>Dialogs_Label1</include>
+	<label>$LOCALIZE[31754]</label>
+	<visible>!player.passthrough</visible>
+	</control>
+	<control type="label">
+	<include>Dialogs_Label2</include>
+	<label>$INFO[Player.Volume]</label>
+	<visible>!player.passthrough</visible>
+	</control>
+	<control type="label">
+	<width>1350</width>
+	<include>Dialogs_Label1</include>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31754][/COLOR][COLOR=80ffffff] | [/COLOR]$LOCALIZE[29802]</label>
+	<visible>player.passthrough</visible>
+	</control>
+	</control>
+	</controls>
+</window>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <!-- Aeon MQ 7 -->
+	<controls>
+	<control type="group">
+	<include>Animation_TopDialogPopup</include>
+	<include>Dialogs_Bar</include>
+	<!-- Barra de cache -->
+	<control type="progress">
+	<top>42</top>
+	<include>Dialogs_Progress</include>
+	<info>Player.ProgressCache</info>
+	<midtexture>progress_mid.png</midtexture>
+	<colordiffuse>$INFO[Skin.String(colorheader)]</colordiffuse>
+	</control>
+	<!-- Barra de progresso -->
+	<control type="progress">
+	<top>42</top>
+	<include>Dialogs_Progress</include>
+	<info>System.Progressbar</info>
+	</control>
+	<control type="label" id="1">
+	<left>0</left>
+	<top>0</top>
+	<width>0</width>
+	<height>0</height>
+	<font>-</font>
+	<visible>false</visible>
+	</control>
+	<control type="label">
+	<left>660</left>
+	<top>6</top>
+	<width>600</width>
+	<height>30</height>
+	<align>center</align>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<font>Font_plot</font>
+	<scroll>true</scroll>
+	<label>$INFO[Control.GetLabel(1)] [COLOR=FFFFFAF0]$INFO[System.Progressbar,- ,%][/COLOR]</label>
+	</control>
+	<control type="textbox" id="9">
+	<left>15</left>
+	<top>51</top>
+	<width>1890</width>
+	<height>100</height>
+	<align>left</align>
+	<aligny>top</aligny>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>-</label>
+	<font>Font_plot</font>
+	<autoscroll time="300" delay="500" repeat="5000">true</autoscroll>
+	</control>
+	</control>
+	</controls>
+</window>

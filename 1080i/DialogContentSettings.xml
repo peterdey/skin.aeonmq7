@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">20</defaultcontrol>
+	<coordinates>
+	<system>1</system>
+	<left>0</left>
+	<top>0</top>
+	</coordinates>
+	<include>Animation_DialogPopup</include>
+	<controls>
+	<control type="group">
+	<left>309</left>
+	<top>285</top>
+	<width>1304</width>
+	<height>476</height>
+	<visible>!Window.IsActive(addonsettings)</visible>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1270</width>
+	<height>1</height>
+	<texture>grey.png</texture>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>490</top>
+	<width>1270</width>
+	<height>1</height>
+	<texture>grey.png</texture>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1270</width>
+	<height>492</height>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>F0FFFFFF</colordiffuse>
+	</control>
+	<!-- Scraper List -->
+	<control type="list" id="21">
+	<left>754</left>
+	<top>52</top>
+	<width>270</width>
+	<height>369</height>
+	<onup>21</onup>
+	<ondown>21</ondown>
+	<onleft>20</onleft>
+	<onright>28</onright>
+	<scrolltime>200</scrolltime>
+	<itemlayout height="62">
+	<control type="image">
+	<left>8</left>
+	<top>8</top>
+	<width>52</width>
+	<height>45</height>
+	<texture background="true">$INFO[Listitem.Icon]</texture>
+	</control>
+	<control type="label">
+	<left>68</left>
+	<top>-2</top>
+	<width>183</width>
+	<height>62</height>
+	<textcolor>FFFFFAF0</textcolor>
+	<selectedcolor>FFFF8C00</selectedcolor>
+	<aligny>center</aligny>
+	<font>Font_plot</font>
+	<align>left</align>
+	<info>ListItem.Label</info>
+	</control>
+	</itemlayout>
+	<focusedlayout height="62">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>270</width>
+	<height>62</height>
+	<texture>grey.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	<visible>Control.HasFocus(21)</visible>
+	</control>
+	<control type="image">
+	<left>8</left>
+	<top>8</top>
+	<width>52</width>
+	<height>45</height>
+	<texture background="true">$INFO[Listitem.Icon]</texture>
+	</control>
+	<control type="label">
+	<left>68</left>
+	<top>-2</top>
+	<width>183</width>
+	<height>62</height>
+	<textcolor>FFbbbbbb</textcolor>
+	<selectedcolor>FFFF8C00</selectedcolor>
+	<aligny>center</aligny>
+	<font>Font_plot</font>
+	<align>left</align>
+	<info>ListItem.Label</info>
+	<visible>!Control.HasFocus(21)</visible>
+	</control>
+	<control type="label">
+	<left>68</left>
+	<top>-2</top>
+	<width>183</width>
+	<height>62</height>
+	<textcolor>FF101010</textcolor>
+	<selectedcolor>FFFF8C00</selectedcolor>
+	<aligny>center</aligny>
+	<font>Font_plot</font>
+	<align>left</align>
+	<info>ListItem.Label</info>
+	<visible>Control.HasFocus(21)</visible>
+	</control>
+	</focusedlayout>
+	</control>
+	<control type="image">
+	<left>-45</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>748</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>748</width>
+	<height>492</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>748</width>
+	<height>48</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="label" id="0">
+	<!-- header -->
+	<left>30</left>
+	<top>0</top>
+	<width>720</width>
+	<height>48</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<font>Font_button</font>
+	<label>$LOCALIZE[20333]</label>
+	</control>
+	<!-- Content Button -->
+	<control type="spincontrolex" id="20">
+	<left>0</left>
+	<top>52</top>
+	<width>748</width>
+	<height>62</height>
+	<font>Font_plot</font>
+	<focusedcolor>FF101010</focusedcolor>
+	<texturefocus>grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<pulseonselect>false</pulseonselect>
+	<spinposx>-4</spinposx>
+	<textoffsetx>-15</textoffsetx>
+	<onup>5</onup>
+	<ondown>5</ondown>
+	<onleft>28</onleft>
+	<onright>21</onright>
+	<aligny>center</aligny>
+	<subtype>text</subtype>
+	</control>
+	<control type="label" id="1">
+	<description>directory contains label</description>
+	<left>30</left>
+	<top>52</top>
+	<width>756</width>
+	<height>62</height>
+	<label>$LOCALIZE[20333]</label>
+	<font>Font_plot</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<aligny>center</aligny>
+	<visible>!Control.HasFocus(20)</visible>
+	</control>
+	<control type="label" id="1">
+	<description>directory contains label</description>
+	<left>30</left>
+	<top>52</top>
+	<width>756</width>
+	<height>62</height>
+	<label>$LOCALIZE[20333]</label>
+	<font>Font_plot</font>
+	<textcolor>FF101010</textcolor>
+	<aligny>center</aligny>
+	<visible>Control.HasFocus(20)</visible>
+	</control>
+	<!-- Content List -->
+	<control type="grouplist" id="5">
+	<description>control area</description>
+	<left>0</left>
+	<top>114</top>
+	<width>748</width>
+	<height>308</height>
+	<itemgap>0</itemgap>
+	<onup>20</onup>
+	<ondown>20</ondown>
+	<onleft>28</onleft>
+	<onright>21</onright>
+	</control>
+	<control type="button" id="7">
+	<left>0</left>
+	<top>0</top>
+	<height>62</height>
+	<font>Font_plot</font>
+	<textoffsetx>15</textoffsetx>
+	</control>
+	<control type="radiobutton" id="8">
+	<left>0</left>
+	<top>0</top>
+	<width>748</width>
+	<height>62</height>
+	<textwidth>600</textwidth>
+	<font>Font_plot</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<focusedcolor>FF101010</focusedcolor>
+	<pulseonselect>false</pulseonselect>
+	<radiowidth>141</radiowidth>
+	<radioposx>624</radioposx>
+	<radioheight>98</radioheight>
+	<textoffsetx>30</textoffsetx>
+	<aligny>center</aligny>
+	</control>
+	<!-- Options -->
+	<control type="image">
+	<left>980</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1269</left>
+	<top>0</top>
+	<width>45</width>
+	<height>492</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1024</left>
+	<top>0</top>
+	<width>244</width>
+	<height>492</height>
+	<texture>grey.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="grouplist" id="9000">
+	<left>1024</left>
+	<top>63</top>
+	<onleft>SetFocus(20)</onleft>
+	<onright>SetFocus(20)</onright>
+	<control type="button" id="28">
+	<!-- OK -->
+	<include>SettingsDialogButton</include>
+	<label>186</label>
+	<onleft>SetFocus(20)</onleft>
+	<onright>SetFocus(20)</onright>
+	</control>
+	<control type="button" id="29">
+	<!-- Cancel -->
+	<include>SettingsDialogButton</include>
+	<label>222</label>
+	<onleft>SetFocus(20)</onleft>
+	<onright>SetFocus(20)</onright>
+	</control>
+	<control type="button" id="22">
+	<!-- Settings -->
+	<include>SettingsDialogButton</include>
+	<label>5</label>
+	<onleft>SetFocus(20)</onleft>
+	<onright>SetFocus(20)</onright>
+	</control>
+	</control>
+	</control>
+	</controls>
+</window>
