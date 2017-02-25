@@ -32,7 +32,7 @@
 	<onfocus>Skin.SetString(menulabel,$INFO[Container(9000).ListItem.Property(name)])</onfocus>
 	<onfocus condition="Player.HasMedia">SetFocus(600)</onfocus>
 	<onfocus condition="!Player.HasMedia + ![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onfocus>
-	<onfocus condition="!Player.HasMedia + [IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onfocus>
+	<onfocus condition="!Player.HasMedia + [IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onfocus>
 	<onfocus condition="!Player.HasMedia + [IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onfocus>
 	</control>
 	<control type="button" id="8002">

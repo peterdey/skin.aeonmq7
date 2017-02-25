@@ -1679,9 +1679,10 @@
 	<include>Widgets_Button</include>
 	<label>31460</label>
 	<onclick>SetFocus(9000)</onclick>
-	<onclick condition="!Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onclick>
+	<onclick condition="![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onclick>
 	<onclick condition="Skin.HasSetting(kioskcode) + StringCompare(skin.string(codestep),step3)">ActivateWindow(6641)</onclick>
 	<onclick condition="Skin.HasSetting(kioskcode) + !StringCompare(skin.string(codestep),step3)">ActivateWindow(6629)</onclick>
+	<visible>!Skin.HasSetting(kiosk) + ![Skin.HasSetting(kiosksmart) + !Skin.HasSetting(kioskcode)]</visible>
 	</control>
 	</control>
 	<control type="image">
@@ -2890,10 +2891,10 @@
 	<include>Widgets_Button</include>
 	<label>$VAR[value_widgetsstatus] $VAR[value_widgetscounter]</label>
 	<onclick>SetFocus(9000)</onclick>
-	<onclick condition="!Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onclick>
+	<onclick condition="![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onclick>
 	<onclick condition="Skin.HasSetting(kioskcode) + StringCompare(skin.string(codestep),step3)">ActivateWindow(6641)</onclick>
 	<onclick condition="Skin.HasSetting(kioskcode) + !StringCompare(skin.string(codestep),step3)">ActivateWindow(6629)</onclick>
-	<enable>![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)] | Skin.HasSetting(kioskcode)</enable>
+	<enable>!Skin.HasSetting(kiosk) + ![Skin.HasSetting(kiosksmart) + !Skin.HasSetting(kioskcode)]</enable>
 	</control>
 	<!-- Configurar widgets -->
 	<!--<control type="button" id="520">

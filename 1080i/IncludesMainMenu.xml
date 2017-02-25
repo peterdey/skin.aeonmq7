@@ -299,7 +299,7 @@
 	<onright>602</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayDVD</onclick>
 	<label>-</label>
@@ -318,7 +318,7 @@
 	<onright>603</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Play)</onclick>
 	<label>-</label>
@@ -339,7 +339,7 @@
 	<onright>604</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Stop)</onclick>
 	<label>-</label>
@@ -357,7 +357,7 @@
 	<onright>605</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>SetFocus(703)</onclick>
 	<label>-</label>
@@ -376,7 +376,7 @@
 	<onright>606</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>ActivateWindow(musicplaylist)</onclick>
 	<label>-</label>
@@ -395,7 +395,7 @@
 	<onright>607</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Previous)</onclick>
 	<label>-</label>
@@ -414,7 +414,7 @@
 	<onright>608</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>ChannelDown</onclick>
 	<label>-</label>
@@ -433,7 +433,7 @@
 	<onright>609</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Rewind)</onclick>
 	<label>-</label>
@@ -451,7 +451,7 @@
 	<onright>610</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Forward)</onclick>
 	<label>-</label>
@@ -469,7 +469,7 @@
 	<onright>611</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>PlayerControl(Next)</onclick>
 	<label>-</label>
@@ -488,7 +488,7 @@
 	<onright>612</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>ChannelUp</onclick>
 	<label>-</label>
@@ -507,7 +507,7 @@
 	<onright>9000</onright>
 	<ondown>9000</ondown>	
 	<onup condition="![IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onup>
-	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onup>
+	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + ![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart)]">ActivateWindow(6641)</onup>
 	<onup condition="[IsEmpty(Container(9000).ListItem.Property(widgets)) | IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onup>
 	<onclick>fullscreen</onclick>
 	<label>-</label>
