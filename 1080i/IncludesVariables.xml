@@ -2320,8 +2320,19 @@
 	</variable>	
 	
 	<!-- ############################################################## VALORES DO TOCANDO AGORA/MENU PRINCIPAL ############################################################## -->
+
+	<variable name="value_seasonpad">
+	<value condition="!IntegerGreaterThan(Container(510).ListItem.Season,9)">$INFO[Container(510).ListItem.Season,0,]</value>
+	<value>$INFO[Container(510).ListItem.Season]</value>
+	</variable>
+
+	<variable name="value_episodepad">
+	<value condition="!IntegerGreaterThan(Container(510).ListItem.Episode,9)">$INFO[Container(510).ListItem.Episode,0,]</value>
+	<value>$INFO[Container(510).ListItem.Episode]</value>
+	</variable>
+
 	<variable name="value_mainmenu_label">
-	<value condition="!Control.HasFocus(500) + !IsEmpty(Container(510).ListItem.Title)">$INFO[Container(510).ListItem.Season,,/]$INFO[Container(510).ListItem.Episode,, - ]$INFO[Container(510).ListItem.TVShowTitle,(,) ]$INFO[Container(510).ListItem.Title]</value>
+	<value condition="!Control.HasFocus(500) + !IsEmpty(Container(510).ListItem.Title)">$INFO[Container(510).ListItem.TVShowTitle,,] $VAR[value_seasonpad,S,]$VAR[value_episodepad,E,] - $INFO[Container(510).ListItem.Title]</value>
 	<value condition="!Control.HasFocus(500) + IsEmpty(Container(510).ListItem.Title)">$INFO[Container(510).ListItem.Label]</value>
 	<value condition="Control.HasFocus(500)">$INFO[Container(500).ListItem.Label]</value>
 	</variable>
